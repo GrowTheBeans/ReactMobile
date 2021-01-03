@@ -4,7 +4,8 @@ import './index.css';
 // import App from './NewFeaturesAPI/Context.jsx';
 // import App from './NewFeaturesAPI/ContextType.jsx';
 // import App from './NewFeaturesAPI/Lazy_Suspense.jsx';
-import App from './NewFeaturesAPI/Memo_Pure.jsx';
+// import App from './NewFeaturesAPI/Memo_Pure.jsx';
+import App from './NewFeaturesAPI/LifeCycle.jsx';
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
