@@ -1,6 +1,6 @@
-#### React 生命周期
+#### 一：React 生命周期
 
-- **定义：**从初始化到渲染到页面中到组件更新最后组件销毁
+- **定义：** 从初始化到渲染到页面中到组件更新最后组件销毁
 
 > `16.3` **之前**的生命周期
 
@@ -33,11 +33,15 @@
 ##### 4：组件销毁阶段
 - [x] 使用`componentWillUnmount` 
 
-> `16.3` **之后**的生命周期
+> `16.3` **之后** 的生命周期
 
-- 在**挂载时**和**更新时** 加入了`getDerivedStateFromProps`
+- 在 **挂载时** 和 **更新时** 加入了
 
-#### React 新特性
+- [x] `getDerivedStateFromProps(props, state)` 静态函数用`static` 且接收两个参数，且动态修改`state`值
+
+- [x] `getSnapshotBeforUpdate()`  且和 `componentDidUpdate(prevProps, prevState, snapshot)` 配合一起使用
+
+#### 二：React 新特性
 
 > 组件之间通信
 
