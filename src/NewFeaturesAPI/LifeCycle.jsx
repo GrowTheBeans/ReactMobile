@@ -1,7 +1,9 @@
-import React, { Component, PureComponent } from 'react'
+// import React, {Component} from 'react';
+
+import React, { PureComponent } from 'react';
 
 /**
- * 
+ * 16.3 之前的生命周期
  */
 export default class LifeCycle extends PureComponent {
   constructor(props) {
