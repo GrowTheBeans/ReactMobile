@@ -6,7 +6,8 @@ import './index.css';
 // import App from './NewFeaturesAPI/Lazy_Suspense.jsx';
 // import App from './NewFeaturesAPI/Memo_Pure.jsx';
 // import App from './NewFeaturesAPI/LifeCycle.jsx';
-import App from './NewFeaturesAPI/NewLifeCycle.jsx';
+// import App from './NewFeaturesAPI/NewLifeCycle.jsx';
+import App from './NewFeaturesAPI/Common/List.jsx';
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

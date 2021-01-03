@@ -20,18 +20,19 @@
 
 - 父组件发生改变子组件跟着发生改变
 
-    - 父子组件更新，发生`componentWillReceiveProps`
-    - 后面发生过程和下面一样
+  - 父子组件更新，发生`componentWillReceiveProps`
+  - 后面发生过程和下面一样
 
 - 组件本身`states`发生改变重新渲染
 
-    - `shouldComponentUpdate` 且接收两个参数（props | state） 返回一个布尔值 （false停止渲染）
-    - `componentWillUpdate` 组件在更新之前
-    - `render`
-    - `componentDidUpdate` 组件在更新之后
+  - `shouldComponentUpdate` 且接收两个参数（props | state） 返回一个布尔值 （false 停止渲染）
+  - `componentWillUpdate` 组件在更新之前
+  - `render`
+  - `componentDidUpdate` 组件在更新之后
 
 ##### 4：组件销毁阶段
-- [x] 使用`componentWillUnmount` 
+
+- [x] 使用`componentWillUnmount`
 
 > `16.3` **之后** 的生命周期
 
@@ -39,13 +40,16 @@
 
 - [x] `getDerivedStateFromProps(props, state)` 静态函数用`static` 且接收两个参数，且动态修改`state`值
 
-- [x] `getSnapshotBeforUpdate()`  且和 `componentDidUpdate(prevProps, prevState, snapshot)` 配合一起使用
+- [x] `getSnapshotBeforUpdate()` 且和 `componentDidUpdate(prevProps, prevState, snapshot)` 配合一起使用
 
-#### 二：React 新特性
+#### 二：React 通信
 
-> 组件之间通信
+> 组件之间通信 **React 为单向数据流**
 
-- 使用 `props` 进行通信
+- 使用`props`进行**父** → **子** 进行属性值传递
+    - 子组件设置默认值，使用`static`
+
+- 使用事件进行**子** → **父** 进行属性值传递
 
 - 使用 `Context` 进行通信
 
@@ -57,7 +61,11 @@
 
 - [x] 组件跨页面通信
 
-> `Context` 
+> 使用 `prop-type`进行类型检查
+
+##### 三：React 新特性
+
+> `Context`
 
 - 上下文，共享一个组件树是**全局**的数据，能够让数据在组件树中传递而不必一级级手动传递
 
@@ -81,7 +89,7 @@
 
 - 错误边界，捕获错误信息
 
-> `CreatePortal` 
+> `CreatePortal`
 
 - 创建自定义弹窗，根节点之外进行操作
 
@@ -96,4 +104,3 @@
 > `memo`
 
 - 优化渲染性能
-
