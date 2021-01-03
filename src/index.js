@@ -7,7 +7,10 @@ import './index.css';
 // import App from './NewFeaturesAPI/Memo_Pure.jsx';
 // import App from './NewFeaturesAPI/LifeCycle.jsx';
 // import App from './NewFeaturesAPI/NewLifeCycle.jsx';
-import App from './NewFeaturesAPI/Common/List.jsx';
+// import App from './NewFeaturesAPI/Common/List.jsx';
+// import App from './NewFeaturesAPI/Hooks/UserHooks.jsx';
+// import App from './NewFeaturesAPI/Hooks/UserEffect.jsx';
+import App from './NewFeaturesAPI/Hooks/UserContext.jsx';
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

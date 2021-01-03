@@ -15,7 +15,8 @@
     "react-scripts": "4.0.1"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "eslint-plugin-react-hooks": "^4.2.0"
   },
   "eslintConfig": {
     "extends": [
