@@ -1,4 +1,5 @@
-import React, { Component, PureComponent, memo } from "react";
+// import React, { Component, PureComponent, memo } from "react";
+import React, { Component, memo } from 'react';
 
 /**
  * 运行时问题
@@ -13,7 +14,7 @@ import React, { Component, PureComponent, memo } from "react";
   // }
 // }
 
-// 使用memo来进行运行时优化
+// 使用函数式组件memo API 来进行运行时优化
 const FooComponent = memo(function Foo() {
   console.log('foo 子组件');
   return "父子组件数据 → 视图";
